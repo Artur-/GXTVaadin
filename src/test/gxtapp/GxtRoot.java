@@ -84,7 +84,9 @@ public class GxtRoot extends Root {
 		});
 		layout.addComponent(valueLabel);
 
-		ComboBox combo = new ComboBox("Vaadin ComboBox");
+		ComboBox combo = new ComboBox("Vaadin ComboBox with input prompt");
+		combo.setInputPrompt("Please select a city");
+
 		for (String option : options)
 			combo.addItem(option);
 		layout.addComponent(combo);
@@ -92,7 +94,6 @@ public class GxtRoot extends Root {
 		TextField textField = new TextField();
 		textField.setCaption("Vaadin TextField with input prompt");
 		textField.setInputPrompt("Please enter a value");
-		textField.setValue("Some text");
 		layout.addComponent(textField);
 
 		return p;
@@ -121,14 +122,15 @@ public class GxtRoot extends Root {
 		layout.addComponent(valueLabel);
 
 		GXTComboBox combo = new GXTComboBox();
-		combo.setCaption("GXT ComboBox");
+		combo.setInputPrompt("Please select a city");
+		combo.setCaption("GXT ComboBox with input prompt");
 		combo.getState().getOptions().addAll(options);
 		layout.addComponent(combo);
 
 		GXTTextField textField = new GXTTextField();
+		textField.setValue("");
 		textField.setCaption("GXT TextField with input prompt");
 		textField.setInputPrompt("Please enter a value");
-		textField.setValue("Some text");
 		layout.addComponent(textField);
 
 		return p;

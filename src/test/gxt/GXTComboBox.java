@@ -2,10 +2,9 @@ package test.gxt;
 
 import test.gxt.shared.GXTComboBoxState;
 
-import com.vaadin.terminal.gwt.client.ComponentState;
-import com.vaadin.ui.AbstractComponent;
+import com.vaadin.ui.ComboBox;
 
-public class GXTComboBox extends AbstractComponent {
+public class GXTComboBox extends ComboBox {
 
 	@Override
 	public GXTComboBoxState getState() {
