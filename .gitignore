@@ -1,0 +1,7 @@
+/build
+/WebContent/VAADIN/widgetsets
+/WebContent/META-INF
+.classpath
+.project
+.settings
+GWT development mode*
